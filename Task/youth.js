@@ -619,7 +619,7 @@ function earningsInfo() {
     })
 }
 async function showmsg() {
-       if (rotaryres.status == 1 && rotarytimes >= 97) {
+       if (rotaryres.status == 1 && rotarytimes >= 0) {
             $.msg($.name + " " + nick, subTitle, detail)  //默认前三次为通知
         }else if (rotaryres.status == 1 && rotarytimes % notifyInterval == 0) {
         $.msg($.name + " " + nick, subTitle, detail) //转盘次数/间隔整除时通知;
