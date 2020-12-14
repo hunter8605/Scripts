@@ -626,7 +626,7 @@ async function showmsg() {
         }else if (rotaryres.code == 10010 && notifyInterval != 0) {
          rotarynum = ` 转盘${rotaryres.msg}🎉`
          $.msg($.name+"  "+nick+" "+rotarynum,subTitle,detail)//任务全部完成且通知间隔不为0时通知;
-      if ($.isNode()&&cash >= 30){
+      if ($.isNode()&&cash >= 29){
        await notify.sendNotify($.name + " " + nick, "您的余额约为"+cash+"元，已可以提现"+'\n'+`【收益总计】${signinfo.data.user.score}青豆  现金约${cash}元\n${detail}`)
          }
         } 
